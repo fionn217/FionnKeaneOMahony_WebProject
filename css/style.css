@@ -1,0 +1,237 @@
+/* Colour scheme */
+:root {
+  --primary: #06402B;
+  --secondary: #FFFDD0;
+}
+body {
+  margin: 0;
+  font-family: "Times New Roman", serif;
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+header {
+  background-color: var(--primary);
+  color: var(--secondary);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1 {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  font-size: 1.75rem;
+}
+nav a {
+  color: var(--secondary);
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.bar {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: var(--secondary);
+}
+.bar img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 1rem;
+}
+.bar h2 {
+  font-family: Arial, sans-serif;
+  margin: 0.5rem 0;
+}
+.cta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary);
+  color: var(--secondary);
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  border-radius: 4px;
+}
+.cta:hover {
+  opacity: 0.9;
+}
+.sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem 1rem;
+}
+.section {
+  flex: 1 1 300px;
+  margin: 1rem;
+  background-color: white;
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  padding: 1rem;
+}
+.section h3 {
+  font-family: Arial, sans-serif;
+  margin-top: 0;
+}
+footer {
+  background-color: var(--primary);
+  color: var(--secondary);
+  text-align: center;
+  position:fixed;
+  bottom:0px;
+  width:100%; 
+  font-size: 0.9rem;
+}
+
+/* Home background */
+.bar{
+  position: relative;
+  background: url('../images/bar.jpg') center/cover no-repeat;
+  min-height: 60vh;
+}
+
+.bar::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+/* Home box*/
+.bar-box {
+  position: relative;
+  z-index: 1;
+  margin-left: auto;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  max-width: 600px;
+}
+
+/* Header logo tweaks */
+header img {
+  max-height: 50px;
+}
+
+
+
+/* Card border color */
+.event-card {
+  border: 2px solid var(--primary);
+}
+
+/* Card titles color */
+.event-card .card-title {
+  color: var(--primary);
+}
+
+/* images fit card’s width */
+.event-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+
+/* Form */
+.form-control {
+  border: 1px solid var(--primary);
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--primary);
+}
+
+/* Submit button */
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+.btn-primary:hover {
+  background-color: #05321f;
+  border-color: #05321f;
+}
+
+/* menu page */
+.menu-table {
+  border: 2px solid var(--primary);
+  background: #fff;
+}
+.menu-table caption {
+  caption-side: top;
+  text-align: left;
+  padding-bottom: 0.5rem;
+  color: var(--primary);
+}
+.menu-table th {
+  background-color: var(--primary);
+  color: var(--secondary);
+  text-transform: uppercase;
+}
+.menu-table th,
+.menu-table td {
+  padding: 0.75rem;
+  border: 1px solid var(--primary);
+}
+.menu-table tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+
+
+
+
+/* Review cards */
+.review-card {
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+}
+.review-card .card-body {
+  align-items: center;
+}
+.user-icon {
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+.stars {
+  color: gold;
+  font-size: 1.2rem;
+}
+.review-text {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Review form */
+.review-form {
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+}
+.review-form .card-body {
+  display: flex;
+  flex-direction: column;
+}
+.review-form .btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+.review-form .btn-primary:hover {
+  background-color: #05321f;
+  border-color: #05321f;
+}
+
+.contact-box {
+  position: relative;
+  z-index: 1;
+  margin-bottom: auto;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  max-width: 800px;
+}
